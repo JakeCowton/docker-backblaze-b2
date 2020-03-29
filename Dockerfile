@@ -1,9 +1,10 @@
-FROM python:2.7-slim
+FROM python:3.7-slim
 
 MAINTAINER Andrea Usuelli <andreausu@gmail.com>
 
-ENV VERSION=0.5.6 \
-    AUTHORIZATION_FAIL_MAX_RETRIES=3
+ARG VERSION=1.4.2
+
+ENV AUTHORIZATION_FAIL_MAX_RETRIES=3
     #B2_ACCOUNT_ID        if set at runtime, (re)authorization is performed automatically by this docker image
     #B2_APPLICATION_KEY   if set at runtime, (re)authorization is performed automatically by this docker image
 
